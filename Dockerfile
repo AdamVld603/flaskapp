@@ -11,5 +11,6 @@ WORKDIR /flaskapp
 RUN pip3 install -r requirements.txt
 
 EXPOSE 5000
-CMD ["python", "myproject.py"]
+ENTRYPOINT "./start.sh"
+#CMD ["python", "myproject.py"]
 
